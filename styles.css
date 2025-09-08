@@ -88,3 +88,7 @@ h1{
   border-radius:5px;
   border: none;
 }
+
+.button-post .btn{
+  border: 1px solid lightgray;
+}
