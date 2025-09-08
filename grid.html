@@ -7,36 +7,122 @@
     <link href="styles.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Instagram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand">Navbar</a>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <a class="navbar-brand">
+                <span class="instagram"><i class="fa-brands fa-instagram"></i></span>
+                <p>Instagram</p>
+            </a>
+            <div class="d-flex">
+                <!-- Button trigger modal -->
+                <button type="button" class="post-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Create a new post
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label"><strong>Caption:</strong></label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="publish-button">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary">
+                        <i class="fa-regular fa-sun"></i>
+                    </button>
+                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item-4" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+
     </nav>
 
-    
 
-    <div class="d-flex justify-content-center">
-        <a href="grid.html">a</a>
-        <a href="index.html">b</a>
+    <div class="grid-a">
+        <a href="grid.html">
+            <i class="fa-regular fa-images"></i>
+        </a>
+        <a href="index.html"><i class="fa-regular fa-image"></i></a>
     </div>
-    <h1>GRID</h1>
 
-    <div class="container text-center">
-        <div class="row row-cols-2">
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
+
+    <div class="container-1">
+        <div class="row">
+            <div class="col-sm">
+                <img src="https://t4.ftcdn.net/jpg/01/96/55/89/360_F_196558912_ORYHJgP4ZehRPWUmoEXCzTnxXLELMtwb.jpg" />
+            </div>
+            <div class="col-sm">
+                <img src="https://alpexcursion.com/storage/media/Blog/Lauterbrunnen.webp" />
+            </div>
+            <div class="col-sm">
+                <img
+                    src="https://static01.nyt.com/athletic/uploads/wp/2022/08/26063816/GettyImages-148946041-scaled.jpg" />
+            </div>
         </div>
     </div>
+
+    <div class="container-1">
+        <div class="row">
+            <div class="col-sm">
+                <img src="https://i.ytimg.com/vi/_ddlfLIlE4k/maxresdefault.jpg" />
+            </div>
+            <div class="col-sm">
+                <img
+                    src="https://img.freepik.com/free-photo/computer-progra…creen_53876-138060.jpg?semt=ais_hybrid&w=740&q=80" />
+            </div>
+            <div class="col-sm">
+                <img
+                    src="https://www.shutterstock.com/image-vector/minimal-grunge-christian-cross-design-600nw-2452483893.jpg" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container-1">
+        <div class="row">
+            <div class="col-sm">
+                <img
+                    src="https://snworksceo.imgix.net/ufa/ae03244d-fefe-4a1c-8730-99ea787d9957.sized-1000x1000.jpg?w=1000" />
+            </div>
+            <div class="col-sm">
+                <img src="	https://saltlakeexpress.com/wp-content/uploads/sites/4/2020/08/AdobeStock_91031108-1.jpeg" />
+            </div>
+            <div class="col-sm">
+                <img src="https://www.theladders.com/wp-content/uploads/coder_190517-800x450.jpg" />
+            </div>
+        </div>
+    </div>
+
 
 
 
